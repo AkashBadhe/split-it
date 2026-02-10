@@ -7,17 +7,22 @@ A NestJS-based backend for an expense splitting app similar to Splitwise. Allows
 - Group management
 - Expense creation and splitting
 - Rate limiting and security
+- Swagger API documentation
 
 ## Technologies
 - NestJS
 - MongoDB with Mongoose
 - JWT for auth
 - Throttler for rate limiting
+- Swagger for API docs
 
 ## Setup
 1. Install dependencies: `pnpm install`
 2. Set up MongoDB and update `.env` with `MONGODB_URI`
 3. Run: `pnpm run start:dev`
+
+## API Documentation
+Swagger UI is available at `http://localhost:3000/api` when the server is running.
 
 ## Authentication
 Use JWT tokens. Obtain via `POST /auth/login` with `{email, password}`. Include `Authorization: Bearer <token>` in headers for protected routes.
